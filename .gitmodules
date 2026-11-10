@@ -1,0 +1,6 @@
+[submodule "sglang-all"]
+	path = sglang-all
+	url = git@github.com:jiefangxuanyan/sglang-h3-sm120.git
+[submodule "flashinfer"]
+	path = flashinfer
+	url = git@github.com:jiefangxuanyan/flashinfer-h3-sm120.git

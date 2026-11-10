@@ -1,0 +1,20 @@
+{
+  "model_variant": "fl2va",
+  "backend": "sglang",
+  "performance_mode": "speed",
+  "encoder_parallel": "auto",
+  "enable_cfg_parallel": false,
+  "enable_torch_compile": false,
+  "prompt": "integrated_multimodal_description: A static cinematic shot of a small brass band walking along a quiet riverside at sunset. Natural, coherent movement.\n\noverall_soundscape: Soft footsteps, river ambience, and a short brass melody.\n\nnon_diegetic_music: N/A",
+  "task": "t2va",
+  "conditions": [],
+  "target": {
+    "short_edge": 768,
+    "aspect_ratio": "16:9",
+    "duration_seconds": 5.0
+  },
+  "num_outputs_per_prompt": 1,
+  "flow_shift": 12.0,
+  "audio_flow_shift": 3.0,
+  "seed": 1101
+}

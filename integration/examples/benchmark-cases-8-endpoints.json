@@ -1,0 +1,303 @@
+[
+  {
+    "name": "8-nccl-8endpoints",
+    "mode": "nccl",
+    "gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "nccl_nic_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "name": "8-nccl-4endpoints",
+    "mode": "nccl",
+    "gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "nccl_nic_slots": [
+      0,
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "name": "8-rdma-8endpoints",
+    "mode": "rdma",
+    "gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "nic_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "nccl_nic_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "name": "8-rdma-4endpoints",
+    "mode": "rdma",
+    "gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "nic_slots": [
+      0,
+      0,
+      2,
+      2,
+      4,
+      4,
+      6,
+      6
+    ],
+    "nccl_nic_slots": [
+      0,
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "name": "8-pcie",
+    "mode": "pcie",
+    "gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "name": "4-nccl",
+    "mode": "nccl",
+    "gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "nccl_nic_slots": [
+      0,
+      2
+    ]
+  },
+  {
+    "name": "4-rdma-shared",
+    "mode": "rdma",
+    "gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "nic_slots": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "nccl_nic_slots": [
+      0,
+      2
+    ]
+  },
+  {
+    "name": "4-rdma-adjacent-dedicated",
+    "mode": "rdma",
+    "gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "nic_slots": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "nccl_nic_slots": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "name": "4-rdma-spread-dedicated",
+    "mode": "rdma",
+    "gpus": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "nic_slots": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "nccl_nic_slots": [
+      0,
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "name": "4-pcie",
+    "mode": "pcie",
+    "gpus": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "name": "2-nccl",
+    "mode": "nccl",
+    "gpus": [
+      0,
+      1
+    ],
+    "nccl_nic_slots": [
+      0
+    ]
+  },
+  {
+    "name": "2-rdma-shared",
+    "mode": "rdma",
+    "gpus": [
+      0,
+      1
+    ],
+    "nic_slots": [
+      0,
+      0
+    ],
+    "nccl_nic_slots": [
+      0
+    ]
+  },
+  {
+    "name": "2-rdma-adjacent-dedicated",
+    "mode": "rdma",
+    "gpus": [
+      0,
+      1
+    ],
+    "nic_slots": [
+      0,
+      1
+    ],
+    "nccl_nic_slots": [
+      0,
+      1
+    ]
+  },
+  {
+    "name": "2-rdma-spread-dedicated",
+    "mode": "rdma",
+    "gpus": [
+      0,
+      2
+    ],
+    "nic_slots": [
+      0,
+      2
+    ],
+    "nccl_nic_slots": [
+      0,
+      2
+    ]
+  },
+  {
+    "name": "2-pcie",
+    "mode": "pcie",
+    "gpus": [
+      0,
+      1
+    ]
+  },
+  {
+    "name": "1-local-layerwise-offload",
+    "mode": "nccl",
+    "gpus": [
+      0
+    ],
+    "gpu_selections": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "component_residency": {
+      "video_vae": "resident",
+      "text_encoder": "layerwise-offload"
+    }
+  }
+]

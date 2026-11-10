@@ -1,0 +1,26 @@
+# Local credentials and agent configuration directories present in this workspace.
+/.aws/
+/.agents/
+/.codex/
+
+# Local Pixi environments and Python bytecode caches.
+/.pixi/
+__pycache__/
+*.py[cod]
+
+# Delivered benchmark results and profiler artifacts.
+/integration/validation_*/
+/integration/archive/
+/integration/manifest.json
+/profiles/
+*.log
+
+# Delivered checksum inventories and sidecars.
+SHA256SUMS
+*.sha256
+
+# Locally generated runs and profiler exports.
+/runs/
+*.nsys-rep
+*.sqlite
+*.sqlite-*

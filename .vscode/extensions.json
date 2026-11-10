@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.vscode-python-envs",
+    "renan-r-santos.pixi-code",
+    "charliermarsh.ruff",
+    "tamasfe.even-better-toml"
+  ]
+}
